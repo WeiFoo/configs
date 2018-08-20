@@ -1,7 +1,3 @@
-if has('python3')
-  silent! python3 1
-endif
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -54,8 +50,7 @@ Plugin 'jez/vim-c0'
 Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
 " ----- auto complete --------------
-Plugin 'davidhalter/jedi-vim'
-"Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neocomplete.vim'
 "Plugin 'Shougo/deoplete.nvim'
 "Plugin 'roxma/nvim-yarp'
 "Plugin 'roxma/vim-hug-neovim-rpc'
@@ -146,9 +141,7 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 "set encoding=utf-8
 "let g:python3_host_prog = "/Users/wei/anaconda3/bin/python"
 "let g:deoplete#enable_at_startup = 1
-" ---YCM--------------
-"
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
 " --- general setttings ---
 set backspace=indent,eol,start
 set ruler
@@ -156,6 +149,6 @@ set number
 set showcmd
 set incsearch
 set hlsearch
-silent! py3 pass
+
 syntax on 
 set mouse=a
