@@ -48,11 +48,12 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 " ------python mode -------------
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 " ----- Syntax plugins ------------------------------------------------
 Plugin 'jez/vim-c0'
 Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'universal-ctags/ctags'
 " ----- auto complete --------------
 Plugin 'davidhalter/jedi-vim'
 "Plugin 'Shougo/neocomplete.vim'
@@ -95,6 +96,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "How can I close vim if the only window left open is a NERDTree?
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nmap <F6> :NERDTreeToggle<CR>
 
 " We need this for plugins like Syntastic and vim-gitgutter which put symbols
 " in the sign column.
