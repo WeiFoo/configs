@@ -54,6 +54,10 @@ Plugin 'jez/vim-c0'
 Plugin 'jez/vim-ispc'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'universal-ctags/ctags'
+" ----- fzf search in all files ------
+set rtp+=~/.fzf
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
+Plugin 'junegunn/fzf.vim' 
 " ----- auto complete --------------
 Plugin 'davidhalter/jedi-vim'
 "Plugin 'Shougo/neocomplete.vim'
